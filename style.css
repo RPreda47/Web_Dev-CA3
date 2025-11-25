@@ -5,7 +5,7 @@ img{
     color: black;
 }
 img:hover{
-    transform: scale(1.2);
+    transform: scale(1.4);
     border-style: solid;
     border-width: 2px;
     color: black;
@@ -60,6 +60,73 @@ h1{
     text-align: left;
 
 }
+
+@media only screen and (max-width: 768px){
+    img{
+    transition: transform 0.2s ease;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    }
+    img:hover{
+        transform: scale(1.2);
+        border-style: solid;
+        border-width: 2px;
+        color: black;
+    }
+    body{
+        font-size: 150%;
+        margin-left:4%; 
+        margin-right: 4%;
+        background-size: cover;
+        background-image: url("images/background.png");
+    
+    }
+    p{
+        background-color: whitesmoke;
+        border-style: solid;
+        border-width: 2px;
+        color: black; 
+    }
+    h1{
+        font-size: 200%;
+        background-color: whitesmoke;
+        border-style: solid;
+        border-width: 2px;
+        color: black; 
+        margin-left:15%;   
+        margin-right:15%;  
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    .images{
+        box-sizing: border-box;
+        border-style: solid;
+        color: black;
+        background-color: rgba(245, 245, 245, 60%);
+        padding-left: 4%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        margin-left: 12%;
+        margin-right: 12%;
+    
+    }
+    
+    .nav{
+        margin-left: 2%;
+        margin-top: 3%;
+        border-style: solid;
+        border-width: 2px;
+        color: rgb(63, 63, 63);
+        background-color: white;
+        text-align: left;
+    
+    }
+    
+}
+
 
 
 
