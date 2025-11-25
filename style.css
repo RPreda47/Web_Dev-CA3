@@ -5,7 +5,7 @@ img{
     color: black;
 }
 img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     border-style: solid;
     border-width: 2px;
     color: black;
@@ -60,5 +60,6 @@ h1{
     text-align: left;
 
 }
+
 
 
