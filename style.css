@@ -13,6 +13,7 @@ img:hover{
 body{
     font-size: 150%;
     margin-left:4%; 
+    margin-right: 4%;
     background-size: cover;
     background-image: url("images/background.png");
 
@@ -21,8 +22,7 @@ p{
     background-color: whitesmoke;
     border-style: solid;
     border-width: 2px;
-    color: black;  
-    margin-right:5%;
+    color: black; 
 }
 h1{
     font-size: 200%;
@@ -61,3 +61,4 @@ h1{
     text-align: left;
 
 }
+
