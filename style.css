@@ -51,6 +51,8 @@ h1{
 }
 
 .nav{
+    height: 5%;
+    width: 5%;
     margin-left: 2%;
     margin-top: 3%;
     border-style: solid;
@@ -102,6 +104,7 @@ h1{
     }
     
     .images{
+        width: 100%;
         box-sizing: border-box;
         border-style: solid;
         color: black;
@@ -115,6 +118,8 @@ h1{
     }
     
     .nav{
+        height: 10%;
+        width: 10%;
         margin-left: 2%;
         margin-top: 3%;
         border-style: solid;
@@ -126,6 +131,7 @@ h1{
     }
     
 }
+
 
 
 
