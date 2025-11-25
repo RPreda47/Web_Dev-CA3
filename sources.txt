@@ -7,6 +7,10 @@ SOURCES:
   - https://en.wikipedia.org/wiki/Dodge_Coronet
   - https://en.wikipedia.org/wiki/Plymouth_Barracuda
   - https://en.wikipedia.org/wiki/Buick_Gran_Sport
+  -https://en.wikipedia.org/wiki/Cadillac_Eldorado
+   - https://en.wikipedia.org/wiki/Chevrolet_El_Camino
+  -https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C3)
+  -https://en.wikipedia.org/wiki/Pontiac_Firebird
 
   IMAGES:
     buik: https://gmauthority.com/blog/2020/12/rare-1970-buick-gsx-stage-1-up-for-grabs-video/
@@ -15,4 +19,9 @@ SOURCES:
     69dodge: https://www.carandclassic.com/l/C1927950
     68mustang: https://www.carandclassic.com/auctions/1968-ford-mustang-fastback-351cui-57l-bullitt-evocation-4mbRo8
     pontiac: https://www.carandclassic.com/car/C1930302
+    1957 cadillac-eldorado: https://www.hemmings.com/auction/1957-cadillac-eldorado-exton-pa-465913
+    1971 El Camino: https://www.hemmings.com/auction/1971-chevrolet-el-camino-windsor-locks-ct-569192
+    1979 Firebird: https://www.hemmings.com/listing/1979-pontiac-firebird-471965
+    1969 Corvette: https://www.hemmings.com/listing/1968-chevrolet-corvette-375009
+    
     background(edited slightly): https://www.vecteezy.com/vector-art/42104762-geometric-pattern-template-background-vector
