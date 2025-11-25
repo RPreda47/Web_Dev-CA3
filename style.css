@@ -13,11 +13,12 @@ img:hover{
 body{
     font-size: 150%;
     margin-left:4%; 
+    background-size: cover;
     background-image: url("images/background.png");
 
 }
 p{
-    background-color: white;
+    background-color: whitesmoke;
     border-style: solid;
     border-width: 2px;
     color: black;  
@@ -25,7 +26,7 @@ p{
 }
 h1{
     font-size: 200%;
-    background-color: white;
+    background-color: whitesmoke;
     border-style: solid;
     border-width: 2px;
     color: black; 
@@ -37,7 +38,16 @@ h1{
 }
 
 .images{
-    margin-left: 4%;
+    outline: 1px solid red;
+    box-sizing: border-box;
+    border-style: solid;
+    color: black;
+    background-color: rgba(245, 245, 245, 60%);
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 
@@ -46,7 +56,7 @@ h1{
     margin-top: 3%;
     border-style: solid;
     border-width: 2px;
-    color: black;
+    color: rgb(63, 63, 63);
     background-color: white;
     text-align: left;
 
