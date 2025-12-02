@@ -6,26 +6,85 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body>
-    <a href="index.html"><img src="images/home.png" alt="Home" class="nav"></a>
-    
+
+    <a href="index.html"><img src="images/home.png" alt="Home" class="nav" height="5%" width="5%"></a>
     <h1>Contact Us</h1>
     <p>Please feel free to reach out and tell me all about your collections, I love connecting with fellow enthusiasts!</p>
     <p>Email: ThisIsJon@JohnsEmail.com</p>
     <p>Phone: (555) 123-4567</p>
-    <input type="text" id="email" placeholder="Your email"><br><br>
-    <input type="text" id="comment" placeholder="Your comment"><br><br>
+
+
+    <input type="text" id="fName" placeholder="Enter your first name:  "><br><br>
+    <input type="text" id="lName" placeholder="Enter your last name:  "><br><br>
+    <input type="text" id="email" placeholder="Your email"><br><br> 
+    <label for="Reason">Please select the reason for inquirey:</label>
+
+    <select name="reasonInput" id="reason">
+        <option value="">Select: </option>
+        <option value="gen">General</option>
+        <option value="feeedback">Feedback</option>
+        <option value="tech-sup">Technical Support</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+    <textarea type="text" id="comment" placeholder="Your comment"></textarea>
     <button onclick="submitForm()" type="submit" >Submit</button>
+
+
 </body>
 </html>
+
+
 <script>
     function submitForm() {
+        const fName = document.getElementById('fName').value;
+        const lName = document.getElementById('lName').value;
         const email = document.getElementById('email').value;
+        const reason = document.getElementById('reason').value;
         const comment = document.getElementById('comment').value;
-        if(email && comment) {
-            alert('Thanks for reaching out! We will get back to you shortly.');
-        } else {
-            alert('Please fill in both fields before submitting.');
+        var i;
+        var validEmail = false;
+        var validSubmit = true;
+
+        if( fName == ""|| lName == "" || email =="" || reason=="" || comment =="" ) {
+            validSubmit = false;
+            alert('Please fill all available fields.');
+        };
+
+        for(i=0;i<fName.length;i++){
+            if(fName[i]=="0"|| fName[i]=="1"|| fName[i]=="2"|| fName[i]=="3"|| fName[i]=="4"|| fName[i]=="5"|| fName[i]=="6"|| fName[i]=="7"|| fName[i]=="8"|| fName[i]=="9") {
+                alert("ERROR: 'First name' shouldn't contain any intagers");
+                validSubmit = false;
+                break;
+            }
+        }
+
+        for(i=0;i<lName.length;i++){
+            if(lName[i]=="0"|| lName[i]=="1"|| lName[i]=="2"|| lName[i]=="3"|| lName[i]=="4"|| lName[i]=="5"|| lName[i]=="6"|| lName[i]=="7"|| lName[i]=="8"|| lName[i]=="9") {
+                alert("ERROR: 'Last name' shouldn't contain any intagers");
+                validSubmit = false;
+                break;
+            }
+        }
+
+        for(i=0;i<email.length;i++){
+            if(email[i]=="@") {
+                validEmail = true;
+            }
+        }
+
+        if(validEmail == false){
+            alert("ERROR: '@', must be present for your email to be considered valid");
+            validSubmit = false;
+        }    
+
+        if(validSubmit == true){
+            alert("Valid Submission. Thank you for your feedback.");
+            window.location.reload();
         }
     }
 </script>
